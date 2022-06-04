@@ -6,7 +6,7 @@ var currentNumber = 0;
 botomIncrement[0].addEventListener('click',()=>{   
     
     if(currentNumber < 10){
-        currentNumber = currentNumber + 1;
+        currentNumber++;
         currentNumberWrapper.innerHTML = currentNumber;
         botomIncrement[0].style.backgroundColor="rgb(226, 214, 241)";
         botomDecrement[0].style.backgroundColor="rgb(226, 214, 241)";
@@ -19,7 +19,7 @@ botomIncrement[0].addEventListener('click',()=>{
 botomDecrement[0].addEventListener('click',()=>{ 
 
     if(currentNumber > 0){
-        currentNumber = currentNumber - 1;
+        currentNumber--;
         currentNumberWrapper.innerHTML = currentNumber;
         botomDecrement[0].style.backgroundColor="rgb(226, 214, 241)";
         botomIncrement[0].style.backgroundColor="rgb(226, 214, 241)";
